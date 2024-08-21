@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --fonte-principal:"Josefin Slab", serif;
+    --cor-fundo:#EEEDEB;
+    --cor-botao:#FFB996;
+    --cor-botao-hover:#05255f;
+    --cor-rodape:#FFB996;
+    --cor-fundo-txt: #ea5454d0;
+    --cor-fonte:#071952;
+    --cor-fundo-dark-mode: #071952;
+    --cor-fonte-dark-mode:#EEEDEB;
+    --cor-botao-hover-dark-mode:#ea5454d0;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+body.modoNoturno{
+    background-color: var(--cor-fundo-dark-mode);
+    color:var(--cor-fonte-dark-mode);
+}
+
+body.modoNoturno #logotipo{
+    filter: invert(100%);
+}
+
+header{
+    padding: 0.62rem 0.062rem 0.62rem 0.93rem;
+}
+
+.botao__modoNoturno {
+    position: fixed;
+    top: 0.93rem;
+    right: 0.93rem;
+    border: none;
+    align-items: right;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.botao__modoNoturno img {
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.digitar__txt {
+    font-family: var(--fonte-principal);
+    justify-content: space-between;
+    align-items: centers;
+    width: 50rem;
+    height:62.5rem ;
+    padding: 1.8rem;
+    margin-left:12.5rem ;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.txt_usuario {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1.12rem;
+    padding: 0.62rem;
+    height: 18.7rem;
+    width: 31.2rem;
+    box-sizing: border-box; 
+    border-radius: 0.93rem;
+}
+
+body.modoNoturno .txt_usuario{
+    background-color: var(--cor-fundo-dark-mode);
+    color: var(--cor-fonte-dark-mode);
+}
+
+h1{
+    font-size: 3.12rem;
+}
+
+.botao__cliptografar, .botao__descliptografar, .botao__copiar{
+    background-color: var(--cor-botao);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 1.8rem;
+    justify-content: space-between;
+    gap: 1.25rem;
+    color: var(--cor-fonte);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: none;
+    bottom: 31.2rem;
+}
+
+.botao__cliptografar, .botao__descliptografar{
+    margin: 1.37rem;
+    margin-top: 0.125rem;
+}
+
+.botao__copiar{
+    margin: auto;
+    margin-top: 1.56rem;
+}
+
+.botao__cliptografar:hover, .botao__descliptografar:hover, .botao__copiar:hover {
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-fonte-dark-mode);
+}
+
+body.modoNoturno .botao__cliptografar:hover,
+body.modoNoturno .botao__descliptografar:hover {
+    background-color: var(--cor-botao-hover-dark-mode);
+}
+
+.resultado {
+    background-color: var(--cor-fundo-txt);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.25rem;
+    text-align:center;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 25rem;
+    height: 34.68rem;
+    border: 0rem;
+    padding: 1.8rem;
+    margin: 5rem;
+    margin-top: -385px;
+    word-wrap:break-word;
+    overflow: auto ;
+    scrollbar-width: thin ;
+}
+
+.trecho__1, .trecho__2 {
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.trecho__1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+}
+
+.trecho__2{
+    font-family: var(--fonte-principal);
+    font-size: 1.52rem;
+}
+
+.rodape {
+    background-color: var(--cor-rodape);
+    color: var(--cor-fonte);
+    padding: 0.93rem;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+}

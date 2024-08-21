@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiple" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/logo-aba.png">
+    <style>
+        #botao__copiar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logotipo" src="./assets/Frame 6.png">
+        <button onclick="modoNoturno()" type="button" id="modoNoturno" class="botao__modoNoturno">
+            <img id="modoIcone" src="./assets/Button Night.png" alt="Modo Claro">
+        </button>
+    </header>
+
+    <main>
+        <section class="digitar__txt">
+        <form>
+            <h1>Digite seu texto</h1>
+            <textarea id="txt_usuario" class="txt_usuario" name="txt_usuario" rows="20" cols="70"></textarea>
+        </form>
+        <img class="imagem__atencao" src="./assets/Frame 1.png" alt="apenas letrar minusculas e sem acento">
+        <div class="div__botao">
+        <button onclick="cliptografar()" type="button" class="botao__cliptografar">Criptografar</button>
+        <button onclick="descliptografar()" type="button" class="botao__descliptografar">Descriptografar</button>
+        </div>
+        </section>
+
+        <section class="resultado"> 
+            <img class="imagem-tela" src="./assets/High quality products 1 1.png">
+            <p class="resultado__txt"><span class="trecho__1"><strong>Nenhuma mensagem encontrada.</strong> </span> <span class="trecho__2">
+                Digite um texto que você deseja criptografar ou descriptografar.</span>
+            </p>
+            <button onclick="copiar()" type="button" id="botao__copiar" class="botao__copiar">Copiar</button>
+            <script>
+                function substituirImagemPorTexto() {
+                    document.getElementsByClassName("imagem-tela").style.display = "none";
+                    document.getElementsByClassName("resultado__txt").style.display = "block";
+                }
+            </script>
+        </section>
+
+        <script src="main.js" defer></script>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por TAYLAM MOURA para o Challenge Alura - 2024</p>
+    </footer>
+</body>
+</html>
